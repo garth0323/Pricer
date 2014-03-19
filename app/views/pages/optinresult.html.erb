@@ -1,0 +1,32 @@
+<div class="page-header">
+  <h1>Your Email Pricing <small>breakdown and total</small></h1>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Price breakdown:</h3>
+  </div>
+  <div class="panel-body">
+    $<%= @optin_price.inspect %> and a $<%= @setup_fee %> setup fee
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Monthly Sends:</h3>
+  </div>
+  <div class="panel-body">
+    <%= @optin_sends.inspect %>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Total:</h3>
+  </div>
+  <div class="panel-body">
+    $<%= @optin_price + @optin_setup_fee %>
+  </div>
+</div>
+
+<%= link_to "Change something", optin_path, class: "btn btn-primary" %>

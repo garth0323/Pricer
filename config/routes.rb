@@ -2,7 +2,10 @@ Pricer::Application.routes.draw do
   root "pages#home"
   get "about" => "pages#about"
   get "email" => "pages#email"
+  get "optin" => "pages#optin"
   post "result" => "pages#result"
+  post "optinresult" => "pages#optinresult"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
