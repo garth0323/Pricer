@@ -7,7 +7,7 @@
     <h3 class="panel-title">Price breakdown:</h3>
   </div>
   <div class="panel-body">
-    $<%= @optin_price.inspect %> and a $<%= @setup_fee %> setup fee
+    $<%= @optin_price.inspect %> and a $<%= @optin_setup_fee %> setup fee
   </div>
 </div>
 
@@ -25,7 +25,8 @@
     <h3 class="panel-title">Total:</h3>
   </div>
   <div class="panel-body">
-    $<%= @optin_price + @optin_setup_fee %>
+    $<%= @optin_price + @optin_setup_fee %> the first month<br/>
+    $<%= @optin_price %> monthly
   </div>
 </div>
 
