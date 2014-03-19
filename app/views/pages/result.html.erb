@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>Your Email Pricing <small>breakdown and total</small></h1>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Price breakdown:</h3>
+  </div>
+  <div class="panel-body">
+    $<%= @result.inspect %> and a $<%= @setup_fee %> setup fee
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Total:</h3>
+  </div>
+  <div class="panel-body">
+    $<%= @result + @setup_fee %>
+  </div>
+</div>
+
+<%= link_to "Change something", email_path, class: "btn btn-primary" %>
