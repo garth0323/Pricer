@@ -26,6 +26,9 @@
   </div>
   <div class="panel-body">
     $<%= @optin_price + @optin_setup_fee %> the first month<br/>
+    <% if @template == 'custom' %>
+    *$250 for each additional custom template<br/>
+    <% end %>
     $<%= @optin_price %> monthly
   </div>
 </div>
