@@ -20,7 +20,7 @@ class PagesController < ApplicationController
   
   def optinresult
     @subscribers = params[:subscribers]
-    @template = params[:template]
+    @template = params[:template_price]
     @optin_setup_fee = optin_setup
     @optin_price = 0
     @optin_sends = 0
@@ -85,7 +85,7 @@ class PagesController < ApplicationController
   end
   
   def optin_setup
-    if @template = "custom"
+    if @template == 'custom'
       750
     else
       99
